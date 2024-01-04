@@ -16,7 +16,7 @@ class Config(object):
     TG_MAX_FILE_SIZE = 2097152000
     FREE_USER_MAX_FILE_SIZE = 50000000
     # chunk size that should be used with requests
-    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
+    CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 12800000000))
     # default thumbnail to be used in the videos
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "https://telegra.ph/file/1efd13f55ef33d64aa2c8.jpg")
     # proxy for accessing youtube-dl in GeoRestricted Areas
